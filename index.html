@@ -12,15 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- The landing page skeleton -->
     <div class="landing-page">
+
+        <!-- The header for large screen view -->
         <div class="header">
             <h2>EXPLORER</h2>
             <div class="menu">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </div>
+
+        <!-- The header or menu bar for the mobile view-->
         <div class="menu-holder">
             <div class="menu-list">
                 <h2>EXPLORER</h2>
@@ -32,7 +38,9 @@
                 <a href="javascript:void(0);" class="icon" onclick="menuBarList()"><i onclick="myFunction(this)" class="fa-solid fa-bars"></i></a>
             </div>
         </div>
-        <div class="landingpage-content">
+
+        <!-- landing page content -->
+        <div class="landingpage-content" id="home">
             <div class="space-left">
 
             </div>
@@ -45,13 +53,19 @@
             </div>
         </div>
     </div>
-    <div class="hero">
+
+    <!-- The hero or about section -->
+    <div class="hero" id="about">
         <div class="available-projects">
             <div class="first-projects">
+
+                <!-- Getting started -->
                 <div class="first-project-content">
                     <h2>Explore <br> something <br> new.</h2>
                     <button><a href="#">GET STARTED</a></button>
                 </div>
+
+                <!-- Hiking -->
                 <div class="first-project-content">
                     <h2>Hiking</h2>
                     <p>Lorem ipsum dolor sit amet cons <br>
@@ -62,6 +76,8 @@
                         voluptatum expedita, architecto a <br>
                         b illum delectus excepturi?</p>
                 </div>
+
+                <!-- Sky Diving -->
                 <div class="first-project-content">
                     <h2>Sky Diving</h2>
                     <p>Lorem ipsum dolor sit amet cons <br>
@@ -73,7 +89,10 @@
                         b illum delectus excepturi?</p>
                 </div>
             </div>
+
             <div class="second-projects">
+
+                <!-- Snow Boarding -->
                 <div class="second-project-content">
                     <h2>Snow Boarding</h2>
                     <p>Lorem ipsum dolor sit amet cons <br>
@@ -84,6 +103,8 @@
                         voluptatum expedita, architecto a <br>
                         b illum delectus excepturi?</p>
                 </div>
+
+                <!-- Surfing -->
                 <div class="second-project-content">
                     <h2>Surfing</h2>
                     <p>Lorem ipsum dolor sit amet cons <br>
@@ -94,6 +115,8 @@
                         voluptatum expedita, architecto a <br>
                         b illum delectus excepturi?</p>
                 </div>
+
+                <!-- Swimming -->
                 <div class="second-project-content">
                     <h2>Swimming</h2>
                     <p>Lorem ipsum dolor sit amet cons <br>
@@ -106,8 +129,10 @@
                 </div>
             </div>
         </div>
-    </div> 
-    <div class="footer">
+    </div>
+    
+    <!-- The footer section -->
+    <div class="footer" id="contact">
         <div class="footer-first-section">
             <h2>EXPLORER</h2>
             <button><a href="#">GET STARTED</a></button>
@@ -121,8 +146,9 @@
             </div>
         </div>
     </div>
+
 </body>
 
-
+<!-- Linking the javascript source -->
 <script src="main.js"></script>
 </html>

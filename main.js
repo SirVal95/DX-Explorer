@@ -9,7 +9,7 @@ function menuBarList() {
     }
 }
 
-//Function to toggle the plus the menu icon to cancel icon
+//Function to toggle the menu icon to cancel icon
 function myFunction(x) {
     x.classList.toggle("fa-xmark")
 }
