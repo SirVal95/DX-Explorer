@@ -149,6 +149,8 @@ body{
 }
 
 .explore button:hover {
+    background: #a3695f;
+    border: solid 2px #ff6347;
     padding: 10px 20px;
 }
 
@@ -189,25 +191,31 @@ body{
 }
 
 .first-project-content, .second-project-content {
-    width: 350px;
-    height: 250px;
+    width: 320px;
+    height: 220px;
     background: #ff6347;
     color: #ffff;
     border-radius: 20px;
     text-align: left;
-    padding: 15px 30px 30px 30px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.first-project-content:hover, .second-project-content:hover {
+    background: linear-gradient(150deg, #ff6347, #000000, #ff6347ad);
 }
 
 .first-project-content h2, .second-project-content h2 {
     font-weight: 700;
-    font-size: 37px;
+    font-size: 30px;
     margin-bottom: 12px;
 }
 
 .first-project-content p, .second-project-content p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 17px;
 }
 
 .first-project-content button, .footer-first-section button {
@@ -218,9 +226,10 @@ body{
     transition: all 0.5s ease-in-out;
 }
 
-.first-project-content button:hover, .footer-first-section button:hover {
-    background: rgba(255, 255, 255, 0.699);
+.first-project-content button:hover {
+    background: transparent;
     padding: 10px 25px;
+    border: solid 2px #ffff;
 }
 
 .first-project-content button a, .footer-first-section button a {
@@ -251,6 +260,12 @@ body{
     margin-left: 18px;
     color: #ffff;
     font-size: 30px;
+}
+
+.footer-first-section button:hover {
+    background: #000000;
+    padding: 10px 25px;
+    border: solid 2px #ffff;
 }
 
 .footer-second-section {
@@ -294,7 +309,7 @@ body{
     }
 
     .explore h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .explore p {
@@ -302,7 +317,7 @@ body{
     }
 
     .available-projects {
-        margin: 50px 50px;
+        margin: 50px 20px;
     }
 
     .first-projects, .second-projects {
@@ -312,7 +327,6 @@ body{
 
     .first-project-content, .second-project-content {
         margin-bottom: 20px;
-
     }
 
     .first-project-content:last-child {
@@ -325,6 +339,8 @@ body{
 
     .footer-second-section {
         flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
     }
 
     .footer-second-section p {
